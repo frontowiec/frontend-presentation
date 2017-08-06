@@ -14,6 +14,26 @@ body {
   background: #fff;
   background-color: #fff; }
 
+.my-logo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-logo img {
+  border: none !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  margin-right: 30px !important;
+  width: 100px;
+  height: 100px;
+}
+
+.my-logo h2 {
+  margin: 0 !important;
+}
+
 .reveal {
   font-family: "Roboto", sans-serif;
   font-size: 42px;

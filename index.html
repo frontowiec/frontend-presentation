@@ -39,29 +39,30 @@
         </section>
         <section>
             <section>
-                <h2>problemy</h2>
-            </section>
-            <section>
-                <h3>Wzrost złożoności</h3>
-                <img src="assets/preview.gif" alt="complexity"/>
-            </section>
-            <section>
-                <h2>Do tej pory</h2>
+                <h2>Frontend aktualnie</h2>
                 <ul>
+                    <li>Użycie gotowych komponentów</li>
                     <li>MVC / MVVM</li>
-                    <li>pseudo OOP</li>
-                    <li>dużo za dużo kastomowych eventów</li>
+                    <li>Pseudo OOP</li>
+                    <li>Bezpośrednie manipulowanie elementami DOM</li>
+                    <li>Wszędzie eventy</li>
                 </ul>
             </section>
             <section>
-                <h2>Jakie problemy napotkałem</h2>
+                <h2>Angular - przykład</h2>
+            </section>
+            <!--<section>
+                <h3>Wzrost złożoności</h3>
+                <img src="assets/preview.gif" alt="complexity"/>
+            </section>-->
+            <section>
+                <h2>Napotkane problemy</h2>
+                <small>*nasilają się wraz z zwiększaniem się ilości kodu</small>
                 <ul>
-                    <li>utrzymanie spójności</li>
-                    <li>dodawanie nowej fukncjonalności</li>
-                    <li>poprawa błędów</li>
-                    <li>reprodukcja błędów</li>
-                    <li>zrozumienie kodu</li>
-                    <li>re-użycie elementów</li>
+                    <li>Utrzymanie spójności modelu danych</li>
+                    <li>Reprodukcja i poprawa błędów</li>
+                    <li>Zrozumienie kodu, przepływu danych</li>
+                    <li>Ponowne użycie elementów</li>
                 </ul>
             </section>
             <section>
@@ -71,29 +72,29 @@
         <section>
             <section>
                 <h2>rozwiązania</h2>
-                <div>zmiana modelu mentalnego</div>
-            </section>
-            <section>
-                <h2>architektura flux</h2>
-                <img src="assets/ui_workflow.png" alt="workflow"/>
-            </section>
-            <section>
-                <ul>
-                    <li>jednokierunkowy przepływ danych</li>
-                    <li>wyraźne zdefiniowanie stanu</li>
-                    <li>podzielenie widoku na warstwy</li>
-                    <li>umożliwia zastosowanie <strong>paradygmatu funkcyjnego</strong></li>
-                </ul>
+                <small>wprowadzenie/zmiana modelu mentalnego</small>
             </section>
             <section>
                 <h2>Paradygmat funkcyjny</h2>
                 <ul>
-                    <li>Przewidywalność</li>
+                    <li>
+                        <div>Przewidywalność</div>
+                        <small>pure function, no side effects</small>
+                    </li>
+                    <li>
+                        <div>Bezpieczeństwo</div>
+                        <small>immutable state - minimal as possible</small>
+                    </li>
+                    <li>Modularność</li>
                     <li>Deklaratywność</li>
-                    <li>Bezpieczeństwo - niemutawalny stan</li>
-                    <li>łatwy do rozpoznania lub przewidzenia</li>
-                    <li>modularny</li>
                 </ul>
+            </section>
+            <section>
+                <div class="my-logo">
+                    <img src="assets/flux-logo.png" alt="flux"/>
+                    <h2>architektura flux</h2>
+                </div>
+                <img src="assets/ui_workflow.png" alt="workflow"/>
             </section>
         </section>
         <section>
@@ -101,7 +102,10 @@
                 <h2>narzędzia</h2>
             </section>
             <section>
-                <h2>Javascript ES6/ES7/ES8</h2>
+                <div class="my-logo">
+                    <img src="assets/jslogo.png" alt="js"/>
+                    <h2>Javascript ES6/ES7/ES8</h2>
+                </div>
                 <pre>
                     <code class="javascript" style="font-size: 12px;">import {data} from '../mock-data/data';
 const LOAD_ALL_CONTACTS = 'LOAD_ALL_CONTACTS';
@@ -121,11 +125,17 @@ export default function reducer(state = initialState, action) {
                 </pre>
             </section>
             <section>
-                <h2>TypeScript</h2>
+                <div class="my-logo">
+                    <img src="assets/tslogo.png" alt="ts"/>
+                    <h2>TypeScript</h2>
+                </div>
                 <img src="assets/ts.png" alt="ts"/>
             </section>
             <section>
-                <h2>TypeScript</h2>
+                <div class="my-logo">
+                    <img src="assets/tslogo.png" alt="ts"/>
+                    <h2>TypeScript</h2>
+                </div>
                 <pre>
                     <code class="typescript" style="font-size: 12px;">import {data} from '../mock-data/data';
 export type Contact = {
@@ -152,11 +162,17 @@ export default function reducer(state = initialState, action: any): Contact[] {
                 </pre>
             </section>
             <section>
-                <h2>redux</h2>
+                <div class="my-logo">
+                    <img src="assets/reduxlogo.png" alt="redux"/>
+                    <h2>redux</h2>
+                </div>
                 <img src="assets/ui_workflow.png" alt="workflow"/>
             </section>
             <section>
-                <h2>redux</h2>
+                <div class="my-logo">
+                    <img src="assets/reduxlogo.png" alt="redux"/>
+                    <h2>redux</h2>
+                </div>
                 <pre>
                     <code class="javascript" style="font-size: 12px;">import {data} from '../mock-data/data';
 const LOAD_ALL_CONTACTS = 'LOAD_ALL_CONTACTS';
@@ -176,43 +192,58 @@ export default function reducer(state = initialState, action) {
                 </pre>
             </section>
             <section>
-                <h3>redux - dodatkowe możliwości</h3>
+                <div class="my-logo">
+                    <img src="assets/reduxlogo.png" alt="redux"/>
+                    <h3>redux - dodatkowe możliwości</h3>
+                </div>
                 <ul>
-                    <li>przywracanie wcześniej zapisanego (localstorage, serwer) stanu aplikacji</li>
+                    <li>Przywracanie wcześniej zapisanego (localstorage, serwer) stanu aplikacji</li>
                     <li>Reprodukcja znalezionych błędów na podstawie zapisanych akcji</li>
                     <li>Przesyłanie akcji po sieci w celu współpracy systemów w czasie rzeczywistym</li>
                     <li>Zarządzanie historią - undo/redo</li>
                     <li>Nowa jakość w debugowaniu aplikacji</li>
-                    <li>Rozwarstwienie aplikacji, umożliwiające wprowadzenie alternatywnego UI przy zachowaniu istniejącej logiki
+                    <li>Rozwarstwienie aplikacji, umożliwiające wprowadzenie alternatywnego UI przy zachowaniu
+                        istniejącej logiki
                     </li>
                 </ul>
             </section>
             <section>
-                <h2>Redux debbuger</h2>
-                <img src="assets/devtool.gif" alt="devtool" />
+                <div class="my-logo">
+                    <img src="assets/reduxlogo.png" alt="redux"/>
+                    <h2>Redux debbuger</h2>
+                </div>
+                <img src="assets/devtool.gif" alt="devtool"/>
             </section>
             <section>
-                <h2>react</h2>
+                <section>
+                    <div class="my-logo">
+                        <img src="assets/reactlogo.svg" alt="react"/>
+                        <h2>react</h2>
+                    </div>
+                </section>
                 <ul>
-                    <li>zarządzanie wyraźnie zdefiniowanym stanem</li>
-                    <li>podziału komponentów na tzw. kontenery i komponenty</li>
-                    <li>virtual-dom</li>
+                    <li>Zarządzanie wyraźnie zdefiniowanym stanem</li>
+                    <li>Podziału komponentów na tzw. kontenery i komponenty</li>
+                    <li>Virtual DOM</li>
                 </ul>
             </section>
             <section>
-                <h2>react</h2>
-                <img src="assets/react.png" alt="react" />
+                <div class="my-logo">
+                    <img src="assets/reactlogo.svg" alt="react"/>
+                    <h2>react</h2>
+                </div>
+                <img src="assets/react.png" alt="react"/>
             </section>
             <section>
                 <h2>koszty</h2>
                 <ul>
-                    <li>trzeba napisać większą ilość kodu</li>
-                    <li>duża liczba współpracujących bibliotek</li>
-                    <li>duży próg wejścia dla backendowca</li>
+                    <li>Trzeba napisać większą ilość kodu</li>
+                    <li>Duża liczba współpracujących bibliotek</li>
+                    <li>Duży próg wejścia dla backendowca</li>
                 </ul>
             </section>
             <section>
-                <img src="assets/reduxlibs.png" alt="koszty" />
+                <img src="assets/reduxlibs.png" alt="koszty"/>
             </section>
         </section>
     </div>
