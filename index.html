@@ -29,6 +29,10 @@
     <div class="slides">
         <section>
             <h1>Frontend</h1>
+            <p>#dobraZmiana</p>
+        </section>
+        <section>
+            <h1>Frontend</h1>
             <div>
                 Problemy
                 <i class="material-icons">keyboard_arrow_right</i>
@@ -43,15 +47,22 @@
                 <ul>
                     <li>Użycie gotowych komponentów</li>
                     <li>MVC / MVVM</li>
-                    <li>Pseudo OOP</li>
+                    <li>Pseudo OOP (Angular, ExtJS)</li>
                     <li>Bezpośrednie manipulowanie elementami DOM</li>
+                    <li>Mutowanie modeli danych</li>
                     <li>Komunikacja oparta o eventy</li>
                 </ul>
             </section>
-            <!--<section>
-                <h3>Wzrost złożoności</h3>
-                <img src="assets/preview.gif" alt="complexity"/>
-            </section>-->
+            <section>
+                <h2>Angular</h2>
+                <img src="assets/angulararch.png" alt="angular arch"/>
+            </section>
+            <section>
+                <h2>Angular</h2>
+                <iframe data-src="https://angular.io/generated/live-examples/toh-pt6/eplnkr.html" frameborder="0"
+                        marginwidth="0" marginheight="0" scrolling="no" allowfullscreen width="900"
+                        height="550"></iframe>
+            </section>
             <section>
                 <h2>Napotkane problemy</h2>
                 <small>*nasilają się wraz z zwiększaniem się ilości kodu</small>
@@ -222,6 +233,8 @@ export default function reducer(state = initialState, action) {
                     <li>Zarządzanie wyraźnie zdefiniowanym stanem</li>
                     <li>Podziału komponentów na tzw. kontenery i komponenty</li>
                     <li>Virtual DOM</li>
+                    <li>Mocno rozwinięta społeczność</li>
+                    <li>Dużo narzędzi, komponentów</li>
                 </ul>
             </section>
             <section>
@@ -232,42 +245,35 @@ export default function reducer(state = initialState, action) {
                 <img src="assets/react.png" alt="react"/>
             </section>
         </section>
-       <section>
-           <section>
-               <h2>koszty</h2>
-               <ul>
-                   <li>Trzeba napisać większą ilość kodu</li>
-                   <li>Duża liczba współpracujących bibliotek</li>
-                   <li>Wysoki próg wejścia</li>
-                   <li>Zapewnienie wydajności</li>
-               </ul>
-           </section>
-           <section>
-               <img src="assets/reduxlibs.png" alt="koszty"/>
-           </section>
-       </section>
+        <section>
+            <section>
+                <h2>koszty</h2>
+                <ul>
+                    <li>Trzeba napisać większą ilość kodu</li>
+                    <li>Duża liczba współpracujących bibliotek</li>
+                    <li>Wysoki próg wejścia</li>
+                    <li>Zapewnienie wydajności</li>
+                </ul>
+            </section>
+            <section>
+                <img src="assets/reduxlibs.png" alt="koszty"/>
+            </section>
+        </section>
         <section>
             <section>
                 <h2>Angular vs React</h2>
                 <img src="assets/fptooop.png" alt="opp vs fp"/>
             </section>
-            <section>
-                <h2>Angular</h2>
-                <iframe data-src="https://angular.io/generated/live-examples/toh-pt1/eplnkr.html" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen width="900" height="550"> </iframe>
-            </section>
-            <section>
-                <h2>React</h2>
-                <iframe data-src="https://angular.io/generated/live-examples/toh-pt1/eplnkr.html" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen width="900" height="550"> </iframe>
-            </section>
-            <section>
-                <h2>Angular vs React</h2>
-            </section>
         </section>
         <section>
             <h2>Podsumowanie</h2>
+            <small>Co chcemy osiągnąć?</small>
             <ul>
-                <li>Stan aplikacji odzwierciedla widok, a widok stan aplikacji</li>
-                <li></li>
+                <li>Jasny model mentalny - stan aplikacji odzwierciedla widok, a widok stan aplikacji</li>
+                <li>Kod łatwy do testowania, zrozumienia i ponownego użycia</li>
+                <li>Proste debugowanie i reprodukcja błędów</li>
+                <li>Poprawiona wydajność aplikacji dzięki Virtual DOM</li>
+                <li>Dalej korzystamy z gotowych komponentów</li>
             </ul>
         </section>
     </div>
